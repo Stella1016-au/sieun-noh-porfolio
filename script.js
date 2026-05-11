@@ -216,6 +216,8 @@
     const viewport = document.querySelector(".work-cards-viewport");
     const track = document.getElementById("work-cards-track");
     if (!host || !range || !sticky || !viewport || !track) return;
+    const focusId = new URLSearchParams(window.location.search).get("focus");
+    let focusApplied = false;
 
     let frame = null;
 
@@ -238,6 +240,28 @@
       range.style.minHeight = H + maxX + "px";
 
       updateTransform();
+      alignToFocusedCard();
+    }
+
+    function alignToFocusedCard() {
+      if (focusApplied || !focusId) return;
+
+      const targetCard = track.querySelector(
+        '.project-card[data-project-id="' + focusId + '"]'
+      );
+      if (!targetCard) return;
+
+      const maxX = Math.max(0, track.scrollWidth - viewport.clientWidth);
+      const maxScroll = host.scrollHeight - host.clientHeight;
+      if (maxX <= 0 || maxScroll <= 0) {
+        focusApplied = true;
+        return;
+      }
+
+      const targetX = Math.min(Math.max(targetCard.offsetLeft, 0), maxX);
+      host.scrollTop = (targetX / maxX) * maxScroll;
+      updateTransform();
+      focusApplied = true;
     }
 
     function onScroll() {
