@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Maya 3D 환경 모델링 및 시각화 — Portfolio</title>
+    <meta
+      name="description"
+      content="Maya 랜드마크 환경 모델링, Stereo Camera 시네마틱 교내 영상, Python 기반 에너지 데이터 3D 시각화"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="project-detail-page">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="index.html">Portfolio</a>
+      <nav id="site-nav" class="nav" aria-label="주요 메뉴">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="sr-only">메뉴 열기</span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </header>
+
+    <main id="top" class="project-detail-main">
+      <article class="project-case project-case--collection">
+        <p class="project-detail-back">
+          <a class="project-detail-back-link" href="index.html#work"
+            >← Selected Work</a
+          >
+        </p>
+
+        <header class="project-detail-header">
+          <p class="project-detail-label">Project</p>
+          <h1 class="project-detail-title">
+            Maya 기반 3D 환경 모델링 및 시각화 프로젝트
+          </h1>
+          <p class="project-detail-lede">
+            랜드마크 환경 재구성, Stereo Camera 기반 시네마틱 공간 연출, Python
+            스크립팅 기반 에너지 데이터 3D 인포그래픽까지 — Maya 워크플로 세 가지
+            작업을 정리했습니다.
+          </p>
+        </header>
+
+        <!-- ① 랜드마크 -->
+        <section
+          class="project-collection-piece"
+          id="maya-landmark"
+          aria-labelledby="title-maya-landmark"
+        >
+          <p class="project-detail-label">Work 1</p>
+          <h2 id="title-maya-landmark" class="project-subhead">
+            Maya 기반 랜드마크 3D 환경 모델링
+          </h2>
+          <blockquote class="project-detail-quote">
+            실제 공간의 구조적 특징을 분석하여 3D 데이터로 정교하게 시각화한
+            랜드마크 환경 모델링 작업
+          </blockquote>
+          <figure class="project-detail-video-wrap">
+            <video
+              class="project-detail-video"
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source
+                src="portfolio%20source/maya/3d%ED%83%80%EC%9A%B4.mp4"
+                type="video/mp4"
+              />
+              브라우저가 비디오 태그를 지원하지 않습니다.
+            </video>
+            <figcaption class="project-detail-caption">
+              3D 타운 · 랜드마크 환경 모델링 영상
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- ② Stereo 시네마틱 -->
+        <section
+          class="project-collection-piece"
+          id="maya-stereo"
+          aria-labelledby="title-maya-stereo"
+        >
+          <p class="project-detail-label">Work 2</p>
+          <h2 id="title-maya-stereo" class="project-subhead">
+            Maya Stereo Camera 활용 3D 공간 시네마틱 연출
+          </h2>
+          <blockquote class="project-detail-quote">
+            Stereo Camera 시스템을 활용해 3차원 공간의 깊이감과 입체적 연출을
+            극대화한 3D 시네마틱 교내 홍보 영상 제작
+          </blockquote>
+          <figure class="project-detail-video-wrap">
+            <video
+              class="project-detail-video"
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source
+                src="portfolio%20source/maya/%EC%9E%85%EC%B2%B4%EC%98%81%EC%83%81(%EA%B8%B0%EB%A7%90%EA%B3%BC%EC%A0%9C).mp4"
+                type="video/mp4"
+              />
+              브라우저가 비디오 태그를 지원하지 않습니다.
+            </video>
+            <figcaption class="project-detail-caption">
+              입체 시네마틱 · 교내 홍보 영상 (기말 과제)
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- ③ Python 시각화 -->
+        <section
+          class="project-collection-piece"
+          id="maya-python-viz"
+          aria-labelledby="title-maya-python"
+        >
+          <p class="project-detail-label">Work 3</p>
+          <h2 id="title-maya-python" class="project-subhead">
+            Maya Python Scripting 기반 에너지 데이터 시각화
+          </h2>
+          <blockquote class="project-detail-quote">
+            Python 스크립팅을 활용하여 복잡한 친환경 에너지 데이터를 3D
+            인포그래픽으로 자동 생성 및 구조화한 절차적 시각화 프로젝트 설계
+          </blockquote>
+          <figure class="project-detail-figure project-detail-maya-viz-still">
+            <img
+              src="portfolio%20source/maya/3d-scripting.webp"
+              alt="Maya Python으로 생성한 에너지 데이터 3D 인포그래픽 스틸"
+              width="1600"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <p class="project-detail-text project-detail-download-wrap">
+            <a
+              class="project-detail-pdf-link"
+              href="portfolio%20source/maya/%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              최종 보고서 PDF 열기 (새 탭)</a
+            >
+          </p>
+        </section>
+
+        <p class="project-detail-footer-nav">
+          <a class="btn btn-ghost" href="index.html#work">← 목록으로</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Sieun Noh</span>
+      <span class="footer-note">Portfolio · Maya</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

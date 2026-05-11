@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Unreal · XR · VR 게임 프로젝트 — Portfolio</title>
+    <meta
+      name="description"
+      content="슈퍼마리오 오디세이 모래 왕국 재구현, VR 도자기 Dojait!, VR 멀티플레이 SEEK &amp; HIDE"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="project-detail-page">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="index.html">Portfolio</a>
+      <nav id="site-nav" class="nav" aria-label="주요 메뉴">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="sr-only">메뉴 열기</span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </header>
+
+    <main id="top" class="project-detail-main">
+      <article class="project-case project-case--collection">
+        <p class="project-detail-back">
+          <a class="project-detail-back-link" href="index.html#work"
+            >← Selected Work</a
+          >
+        </p>
+
+        <header class="project-detail-header">
+          <p class="project-detail-label">Projects</p>
+          <h1 class="project-detail-title">
+            Unreal · XR · VR — 게임 및 체험 프로젝트 3종
+          </h1>
+          <p class="project-detail-lede">
+            마리오 오디세이 모래 왕국 프로토타이핑, 기업 협업 VR 도자기
+            <strong>Dojait!</strong>, 멀티플레이 방탈출 <strong>SEEK &amp; HIDE</strong>.
+          </p>
+        </header>
+
+        <!-- ① Mario Odyssey -->
+        <section
+          class="project-collection-piece"
+          id="mariodyssey"
+          aria-labelledby="title-mario"
+        >
+          <p class="project-detail-label">Project 1</p>
+          <h2 id="title-mario" class="project-subhead">
+            Unreal Engine 기반 &#39;슈퍼마리오 오디세이&#39; 핵심 메커니즘 재구현 및
+            레벨 디자인
+          </h2>
+          <blockquote class="project-detail-quote">
+            모래 왕국(Sand Kingdom)의 시각적 특징 분석을 통한 오픈월드 환경 구축 및
+            AI 기반 크리처 로직 구현
+          </blockquote>
+          <p class="project-detail-caption project-detail-caption--above">
+            원본 플레이 영상 참고 — YouTube (임베디드)
+          </p>
+          <div class="project-detail-embed">
+            <iframe
+              src="https://www.youtube.com/embed/qkSKZZAVrWs"
+              title="슈퍼마리오 오디세이 모래 왕국 — 원본 레퍼런스"
+              allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <section class="project-detail-section" aria-labelledby="mario-sum">
+            <h3 id="mario-sum" class="project-detail-h2">Summary</h3>
+            <p class="project-detail-text">
+              《슈퍼마리오 오디세이》의 &#39;모래 왕국&#39; 월드를 분석하여, 언리얼
+              엔진에서 심리스한 게임플레이 환경과 다채로운 상호작용 시스템을 단기간
+              내에 프로토타이핑한 프로젝트입니다.
+            </p>
+          </section>
+          <section class="project-detail-section" aria-labelledby="mario-stack">
+            <h3 id="mario-stack" class="project-detail-h2">Tech Stack</h3>
+            <ul class="project-detail-tags">
+              <li>Unreal Engine 5</li>
+              <li>Blueprints (AI Perception)</li>
+              <li>Maya</li>
+              <li>Actor Retargeting</li>
+            </ul>
+          </section>
+          <section class="project-detail-section" aria-labelledby="mario-role">
+            <h3 id="mario-role" class="project-detail-h2">Role &amp; Contribution</h3>
+            <ul class="project-detail-list">
+              <li>게임플레이 루프(Core Loop) 설계 및 밸런싱 가이드 제작</li>
+              <li>애자일(Agile) 기반 일정 관리 및 테크니컬 문서화(Documentation)</li>
+              <li>크리처 리소스 제작 및 애니메이션 리타겟팅 파이프라인 구축</li>
+              <li>
+                지능형 NPC 행동 패턴 설계 및 스테이트 머신(State Machine) 구현
+              </li>
+            </ul>
+          </section>
+          <section class="project-detail-section" aria-labelledby="mario-key">
+            <h3 id="mario-key" class="project-detail-h2">Key Achievement</h3>
+            <ul class="project-detail-highlights">
+              <li>
+                <strong>논리적 레벨 디자인</strong>
+                수직적 구조와 유저 동선을 분석하여 오픈 필드 레벨을 구성했습니다.
+              </li>
+              <li>
+                <strong>기술적 캐릭터 구현</strong>
+                캐릭터 리타겟팅을 통한 다채로운 모션 적용 및 Maya 활용 리소스
+                최적화를 수행했습니다.
+              </li>
+              <li>
+                <strong>AI 기반 크리처 로직</strong>
+                AI Perception 시스템으로 잡몹 및 보스의 감지·추적·공격 패턴 등
+                단계별 행동 트리(Behavior Tree)를 설계했습니다.
+              </li>
+            </ul>
+          </section>
+          <section class="project-detail-section" aria-labelledby="mario-proc">
+            <h3 id="mario-proc" class="project-detail-h2">Process</h3>
+            <ul class="project-detail-process">
+              <li>
+                <strong>프로토타입 (1주)</strong>
+                핵심 메커니즘(이동, 상호작용) 검증 및 Grey-boxing 기반 레벨 레이아웃
+                확정
+              </li>
+              <li>
+                <strong>알파 단계 (1주)</strong>
+                주요 에셋 통합, 리타겟팅 적용 및 기본 AI 로직(Patrol, Chase) 실장
+              </li>
+              <li>
+                <strong>베타 및 최종 폴리싱 (1주)</strong>
+                보스전 기믹 완성, VFX 및 사운드 최적화, 최종 빌드 안정화
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- ② Dojait -->
+        <section
+          class="project-collection-piece"
+          id="dojait"
+          aria-labelledby="title-doja"
+        >
+          <p class="project-detail-label">Project 2</p>
+          <h2 id="title-doja" class="project-subhead">
+            VR 도자기 제작 시뮬레이션 &#39;Dojait!&#39;
+            <span class="project-subhead-note">기업 협업 프로젝트</span>
+          </h2>
+          <blockquote class="project-detail-quote">
+            위지윅 스튜디오 멘토링 기반의 하이엔드 XR 인터랙션 구현 및 프로젝트
+            매니징
+          </blockquote>
+          <p class="project-detail-text project-detail-download-wrap">
+            <a
+              class="project-detail-pdf-link"
+              href="portfolio%20source/%EA%B2%8C%EC%9E%84/%5BNBEffect%5DXRcontents_(DoJaIt)_240920_%EC%B5%9C%EC%A2%85(%EC%88%98%EC%A0%95).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              최종 결과 PDF 열기 (새 탭)</a
+            >
+          </p>
+          <figure class="project-detail-figure project-detail-dojait-preview">
+            <img
+              src="portfolio%20source/photo2.webp"
+              alt="VR 도자기 시뮬레이션 Dojait! — 장면 참고 이미지"
+              width="1600"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <section class="project-detail-section" aria-labelledby="doja-sum">
+            <h3 id="doja-sum" class="project-detail-h2">Summary</h3>
+            <p class="project-detail-text">
+              가상 현실에서 도자기를 빚고 굽는 전 과정을 경험하는 VR 시뮬레이션
+              게임입니다. 실제 물리를 고려한 손가락 인터랙션과 점토 변형을 시각적으로
+              구현하는 데 초점을 맞췄습니다.
+            </p>
+          </section>
+          <section class="project-detail-section" aria-labelledby="doja-stack">
+            <h3 id="doja-stack" class="project-detail-h2">Tech Stack</h3>
+            <ul class="project-detail-tags">
+              <li>Unity</li>
+              <li>XR Interaction Toolkit</li>
+              <li>Meta Quest 2/3</li>
+              <li>Git (LFS)</li>
+            </ul>
+          </section>
+          <section class="project-detail-section" aria-labelledby="doja-role">
+            <h3 id="doja-role" class="project-detail-h2">Role &amp; Contribution</h3>
+            <ul class="project-detail-list">
+              <li>Project Manager (PM) &amp; Lead Developer</li>
+              <li>Agile 기반 마일스톤 설계 및 리소스 매니지먼트</li>
+              <li>현업 전문가(위지윅 스튜디오)와 기술 커뮤니케이션 및 요구사항 분석</li>
+              <li>XR 환경 아키텍처 설계 및 Git 형상 관리 총괄</li>
+            </ul>
+          </section>
+          <section class="project-detail-section" aria-labelledby="doja-key">
+            <h3 id="doja-key" class="project-detail-h2">Key Achievement</h3>
+            <ul class="project-detail-highlights">
+              <li>
+                <strong>실무 수준의 파이프라인</strong>
+                기업 멘토링 피드백을 바탕으로 기획–제작–최적화로 이어지는 기업형
+                개발 프로세스를 경험했습니다.
+              </li>
+              <li>
+                <strong>물리 기반 인터랙션 설계</strong>
+                정교한 조작감을 위해 핸드 트래킹 및 햅틱 피드백을 최적화했습니다.
+              </li>
+              <li>
+                <strong>효율적인 협업 환경</strong>
+                Git 기반 리소스 관리·충돌 방지로 4인 팀 개발 속도를 높였습니다.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- ③ SEEK & HIDE -->
+        <section class="project-collection-piece" id="seekhide" aria-labelledby="title-seek">
+          <p class="project-detail-label">Project 3</p>
+          <h2 id="title-seek" class="project-subhead">
+            VR 멀티플레이 방탈출 게임 &#39;SEEK &amp; HIDE&#39;
+          </h2>
+          <blockquote class="project-detail-quote">
+            Unreal Engine 기반 실시간 네트워크 동기화 및 VR 환경 최적화
+          </blockquote>
+          <figure class="project-detail-hero-figure">
+            <img
+              src="portfolio%20source/%EA%B2%8C%EC%9E%84/seek%26hide.png"
+              alt="SEEK AND HIDE — 타이틀 비주얼"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <p class="project-detail-caption project-detail-caption--above">
+            플레이 영상 — YouTube
+          </p>
+          <div class="project-detail-embed">
+            <iframe
+              src="https://www.youtube.com/embed/T8S6GAI64i4"
+              title="VR 멀티플레이 방탈출 SEEK AND HIDE"
+              allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <section class="project-detail-section" aria-labelledby="seek-sum">
+            <h3 id="seek-sum" class="project-detail-h2">Summary</h3>
+            <p class="project-detail-text">
+              Meta Quest 2를 활용한 2인 협력형 방탈출 게임입니다. 실시간 네트워크에서
+              플레이어 간 상호작용·데이터 동기화를 구현하고, 하드웨어 한계를 넘기 위한
+              그래픽·드로우 콜 최적화에 집중했습니다.
+            </p>
+          </section>
+          <section class="project-detail-section" aria-labelledby="seek-stack">
+            <h3 id="seek-stack" class="project-detail-h2">Tech Stack</h3>
+            <ul class="project-detail-tags">
+              <li>Unreal Engine 4/5</li>
+              <li>Blueprint (GAS/Network)</li>
+              <li>Meta Quest 2</li>
+              <li>OpenXR</li>
+            </ul>
+          </section>
+          <section class="project-detail-section" aria-labelledby="seek-role">
+            <h3 id="seek-role" class="project-detail-h2">Role &amp; Contribution</h3>
+            <ul class="project-detail-list">
+              <li>Core Gameplay Design &amp; Technical PM</li>
+              <li>Environment Design &amp; VR Performance Optimization</li>
+              <li>Gameplay Framework &amp; AI Interaction Logic</li>
+              <li>Network Replication &amp; Multiplayer Session Management</li>
+            </ul>
+          </section>
+          <section class="project-detail-section" aria-labelledby="seek-key">
+            <h3 id="seek-key" class="project-detail-h2">Key Achievement</h3>
+            <ul class="project-detail-highlights">
+              <li>
+                <strong>실시간 네트워크 동기화</strong>
+                Listen Server 기반 2인 멀티플레이 및 주요 기믹 Replication 처리
+              </li>
+              <li>
+                <strong>VR 퍼포먼스 최적화</strong>
+                텍스처 베이킹·LOD·라이팅 최적화로 모바일 칩셋에서 안정적 구동
+              </li>
+              <li>
+                <strong>몰입형 UX/UI</strong>
+                컨트롤러 레이캐스트 기반 UI 및 다이제틱 인터페이스 구현
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <p class="project-detail-footer-nav">
+          <a class="btn btn-ghost" href="index.html#work">← 목록으로</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Sieun Noh</span>
+      <span class="footer-note">Portfolio · Game &amp; XR</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

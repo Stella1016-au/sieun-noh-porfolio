@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Portfolio — Creative Technologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas
+      id="ascii-flow-trail"
+      class="ascii-flow-trail"
+      aria-hidden="true"
+    ></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top">Portfolio</a>
+      <nav id="site-nav" class="nav" aria-label="주요 메뉴">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="sr-only">메뉴 열기</span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <pre class="hero-ascii-bg"></pre>
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow reveal" data-reveal>Portfolio Website</p>
+          <h1 class="hero-title reveal" data-reveal>
+            <span class="hero-name">Sieun Noh</span>
+            <span class="hero-role"
+              >Creative Technologist <span class="hero-sep">|</span> Multimedia
+              Artist</span
+            >
+          </h1>
+          <p class="hero-lede reveal" data-reveal>
+            다양한 소프트웨어와 AI를 활용해 미디어를 기획하고 제작하는 <br> Creative Technologist입니다.
+          </p>
+          <div class="hero-cta reveal" data-reveal>
+            <a class="btn btn-primary" href="#work">작업 보기</a>
+            <a class="btn btn-ghost" href="#contact">연락하기</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section work">
+        <div class="section-inner work-inner">
+          <header class="section-head work-head">
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-desc">
+              아래로 스크롤하면 작품 이미지가 옆으로 넘어갑니다.
+            </p>
+          </header>
+          <div
+            class="work-scroll-host"
+            id="work-scroll-host"
+            aria-label="작품 이미지 스크롤 영역"
+          >
+            <div class="work-pin-scroll-range">
+              <div class="work-pin-sticky">
+                <div class="work-cards-viewport">
+                  <ul
+                    class="project-list project-list--carousel"
+                    id="work-cards-track"
+                  >
+                    <li class="project-card">
+                      <a
+                        class="project-link"
+                        href="project-xr-stage.html"
+                        aria-label="실시간 XR 스테이지 프로젝트 상세 보기"
+                      >
+                        <div class="project-card-media">
+                          <img
+                            src="portfolio%20source/disguise/Untitled.png"
+                            alt="실시간 XR 스테이지 — Unreal Engine &amp; nDisplay"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project-card">
+                      <a
+                        class="project-link"
+                        href="project-games-collection.html"
+                        aria-label="언리얼·XR 게임 프로젝트 세 가지 상세 보기"
+                      >
+                        <div class="project-card-media">
+                          <img
+                            src="portfolio%20source/photo2.webp"
+                            alt="Unreal · 모래 왕국 프로토타입, VR Dojait!, SEEK &amp; HIDE 멀티플레이"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project-card">
+                      <a
+                        class="project-link"
+                        href="project-maya-collection.html"
+                        aria-label="Maya 3D 환경 모델링·시각화 프로젝트 상세 보기"
+                      >
+                        <div class="project-card-media">
+                          <img
+                            src="portfolio%20source/maya/3d-scripting.webp"
+                            alt="Maya — 랜드마크 모델링, Stereo 시네마틱, Python 에너지 데이터 시각화"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project-card">
+                      <a
+                        class="project-link"
+                        href="project-lingtea-zero.html"
+                        aria-label="링티제로 강남역 DOOH 프로젝트 상세 보기"
+                      >
+                        <div class="project-card-media">
+                          <img
+                            src="portfolio%20source/adflash/%EB%A7%81%ED%8B%B0.webp"
+                            alt="링티제로 Lingtea Zero — 강남역 디지털 옥외광고(DOOH)"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project-card">
+                      <a
+                        class="project-link"
+                        href="project-adflash-experience.html"
+                        aria-label="애드플래쉬 동아리 프로젝트·영상 제작 경험 상세 보기"
+                      >
+                        <div class="project-card-media">
+                          <img
+                            src="portfolio%20source/adflash/%EC%A0%9C%EC%9D%BC%EA%B8%B0%ED%9A%8D.webp"
+                            alt="애드플래쉬 — 제일기획 페스티벌·AF-KODE·광고제·피자스톰 PT"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="project-card">
+                      <a
+                        class="project-link"
+                        href="project-vibe-coding.html"
+                        aria-label="Cursor AI Vibe Coding — TMDB 영화 사이트·Firebase Todo 상세 보기"
+                      >
+                        <div class="project-card-media">
+                          <img
+                            src="portfolio%20source/vibe-coding/stella-todo-list.png"
+                            alt="Stella's Todo List — Cursor AI·Firebase 실시간 Task 관리"
+                            width="800"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-inner">
+        <div class="about-grid">
+          <h2 class="section-title about-grid-title reveal" data-reveal>About</h2>
+          <div class="about-main reveal" data-reveal>
+            <div class="about-copy-inner">
+              <figure class="about-profile">
+                <img
+                  class="about-profile-img"
+                  src="portfolio%20source/KakaoTalk_20251111_195556408.jpg"
+                  alt="Sieun Noh — 프로필"
+                  width="480"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div class="about-copy-text">
+                <p>
+                  다양한 소프트웨어와 AI를 활용해 미디어를 기획하고 제작하는
+                  Creative Technologist입니다.
+                </p>
+                <p>
+                  실시간 XR 스테이지부터 VR 게임, 브랜드 광고 캠페인까지 — 기술과
+                  크리에이티브가 교차하는 지점에서 아이디어를 실제 경험으로
+                  만들어왔습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <ul class="about-list reveal" data-reveal>
+            <li>
+              <span>Focus</span> XR / Real-time 3D, Interactive Media, Creative
+              Direction
+            </li>
+            <li>
+              <span>Tools</span> Unreal Engine, Unity, Maya, After Effects, Cursor
+              AI
+            </li>
+            <li><span>Based in</span> Seoul</li>
+          </ul>
+        </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-inner">
+        <h2 class="section-title reveal" data-reveal>Contact</h2>
+        <p class="contact-lede reveal" data-reveal>
+          새 프로젝트나 협업 제안이 있다면 편하게 연락 주세요.
+        </p>
+        <a class="contact-email reveal" data-reveal href="mailto:nohsieun12@gmail.com"
+          >nohsieun12@gmail.com</a
+        >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span>Sieun Noh</span>
+      <span class="footer-note">Built with plain HTML, CSS &amp; JS</span>
+    </footer>
+
+    <script src="ascii-flow-trail.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
